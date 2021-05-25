@@ -1,17 +1,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% Image Stitching %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%% 2018311004 Hyoung-joon Lim %%%%%%%%%%%
+%%%%%%%%%%%%%%%%% Hyoung-joon Lim %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% In my lab-computer %%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear all; clc
 
-cd('E:\¼®»ç2ÇĞ±â\È«¹Ú»ç´Ô\image stiching')
+cd('E:\ì„ì‚¬2í•™ê¸°\í™ë°•ì‚¬ë‹˜\image stiching')
 
-image1 = imread('E:\¼®»ç2ÇĞ±â\È«¹Ú»ç´Ô\image stiching\1.jpg');
-image2 = imread('E:\¼®»ç2ÇĞ±â\È«¹Ú»ç´Ô\image stiching\2.jpg');
-image3 = imread('E:\¼®»ç2ÇĞ±â\È«¹Ú»ç´Ô\image stiching\3.jpg');
-image4 = imread('E:\¼®»ç2ÇĞ±â\È«¹Ú»ç´Ô\image stiching\4.jpg');
+image1 = imread('E:\ì„ì‚¬2í•™ê¸°\í™ë°•ì‚¬ë‹˜\image stiching\1.jpg');
+image2 = imread('E:\ì„ì‚¬2í•™ê¸°\í™ë°•ì‚¬ë‹˜\image stiching\2.jpg');
+image3 = imread('E:\ì„ì‚¬2í•™ê¸°\í™ë°•ì‚¬ë‹˜\image stiching\3.jpg');
+image4 = imread('E:\ì„ì‚¬2í•™ê¸°\í™ë°•ì‚¬ë‹˜\image stiching\4.jpg');
 totImages = 4;
 
 IMAGE = [image1, image2, image3, image4];
