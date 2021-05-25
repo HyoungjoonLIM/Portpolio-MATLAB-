@@ -1,7 +1,7 @@
 
 %% For unstructured data + structured dta
 % Folder setting
-Folder_path = 'E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\rawdata\5. ±â¼÷»ç\±â¼÷»ç\ÃâÀÔ±â·Ï(new)\Cµ¿';
+Folder_path = 'E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\rawdata\5. ê¸°ìˆ™ì‚¬\ê¸°ìˆ™ì‚¬\ì¶œì…ê¸°ë¡(new)\Cë™';
 cd(Folder_path)
 Folder_ls = ls;
 Folder_ls(1:2,:) = [];
@@ -23,18 +23,18 @@ for i = 1:size(Folder_ls,1)
             % Unstructred data 1
                 raw(1:5,:) = [];
 
-                ind_1 = find(strcmp(raw(1,:),'ÀÏÀÚ'));
-                ind_2 = find(strcmp(raw(1,:),'½Ã°£'));
-                ind_3 = find(strcmp(raw(1,:),'°Ç¹°'));
-                ind_4 = find(strcmp(raw(1,:),'ÃâÀÔ¹®'));
-                ind_5 = find(strcmp(raw(1,:),'»ç¿ø¸í'));
-                ind_6 = find(strcmp(raw(1,:),'Ä«µå¹øÈ£'));
+                ind_1 = find(strcmp(raw(1,:),'ì¼ì'));
+                ind_2 = find(strcmp(raw(1,:),'ì‹œê°„'));
+                ind_3 = find(strcmp(raw(1,:),'ê±´ë¬¼'));
+                ind_4 = find(strcmp(raw(1,:),'ì¶œì…ë¬¸'));
+                ind_5 = find(strcmp(raw(1,:),'ì‚¬ì›ëª…'));
+                ind_6 = find(strcmp(raw(1,:),'ì¹´ë“œë²ˆí˜¸'));
 
                 raw = cat(2,raw(:,ind_1),raw(:,ind_2),raw(:,ind_3),raw(:,ind_4),raw(:,ind_5),raw(:,ind_6));
 
                 raw(1,:) = [];
                               
-                % Find rows: '»ç¿ø¸í' = NaN
+                % Find rows: 'ì‚¬ì›ëª…' = NaN
                 nanrow = [];
                 for k = 1:size(raw,1)
                     if isnan(raw{k,5}) == 1
@@ -51,7 +51,7 @@ for i = 1:size(Folder_ls,1)
                     end
                 end
                 
-                % Find rows: '»ç¿ø¸í' = NaN
+                % Find rows: 'ì‚¬ì›ëª…' = NaN
                 nanrow2 = [];
                 for m = 1:size(raw,1)
                     if isnan(raw{m,1}) == 1
@@ -80,14 +80,14 @@ Result_C = cell2table(Result);
 
 clear Result
 
-% save_path = 'E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\rawdata\5. ±â¼÷»ç\±â¼÷»ç';
+% save_path = 'E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\rawdata\5. ê¸°ìˆ™ì‚¬\ê¸°ìˆ™ì‚¬';
 % cd(save_path)
 % csvwrite('dorm_B.csv', Result_B);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% For unstructured data + structured dta
 % Folder setting
-Folder_path = 'E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\rawdata\5. ±â¼÷»ç\±â¼÷»ç\ÃâÀÔ±â·Ï(new)\Dµ¿ ÁÖÃâÀÔ±¸';
+Folder_path = 'E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\rawdata\5. ê¸°ìˆ™ì‚¬\ê¸°ìˆ™ì‚¬\ì¶œì…ê¸°ë¡(new)\Dë™ ì£¼ì¶œì…êµ¬';
 cd(Folder_path)
 Folder_ls = ls;
 Folder_ls(1:2,:) = [];
@@ -109,18 +109,18 @@ for i = 1:size(Folder_ls,1)
             % Unstructred data 1
                 raw(1:5,:) = [];
 
-                ind_1 = find(strcmp(raw(1,:),'ÀÏÀÚ'));
-                ind_2 = find(strcmp(raw(1,:),'½Ã°£'));
-                ind_3 = find(strcmp(raw(1,:),'°Ç¹°'));
-                ind_4 = find(strcmp(raw(1,:),'ÃâÀÔ¹®'));
-                ind_5 = find(strcmp(raw(1,:),'»ç¿ø¸í'));
-                ind_6 = find(strcmp(raw(1,:),'Ä«µå¹øÈ£'));
+                ind_1 = find(strcmp(raw(1,:),'ì¼ì'));
+                ind_2 = find(strcmp(raw(1,:),'ì‹œê°„'));
+                ind_3 = find(strcmp(raw(1,:),'ê±´ë¬¼'));
+                ind_4 = find(strcmp(raw(1,:),'ì¶œì…ë¬¸'));
+                ind_5 = find(strcmp(raw(1,:),'ì‚¬ì›ëª…'));
+                ind_6 = find(strcmp(raw(1,:),'ì¹´ë“œë²ˆí˜¸'));
 
                 raw = cat(2,raw(:,ind_1),raw(:,ind_2),raw(:,ind_3),raw(:,ind_4),raw(:,ind_5),raw(:,ind_6));
 
                 raw(1,:) = [];
                               
-                % Find rows: '»ç¿ø¸í' = NaN
+                % Find rows: 'ì‚¬ì›ëª…' = NaN
                 nanrow = [];
                 for k = 1:size(raw,1)
                     if isnan(raw{k,5}) == 1
@@ -137,7 +137,7 @@ for i = 1:size(Folder_ls,1)
                     end
                 end
                 
-                % Find rows: '»ç¿ø¸í' = NaN
+                % Find rows: 'ì‚¬ì›ëª…' = NaN
                 nanrow2 = [];
                 for m = 1:size(raw,1)
                     if isnan(raw{m,1}) == 1
@@ -166,14 +166,14 @@ Result_D_main = cell2table(Result);
 
 clear Result
 
-% save_path = 'E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\rawdata\5. ±â¼÷»ç\±â¼÷»ç';
+% save_path = 'E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\rawdata\5. ê¸°ìˆ™ì‚¬\ê¸°ìˆ™ì‚¬';
 % cd(save_path)
 % csvwrite('dorm_B.csv', Result_B);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% For unstructured data + structured dta
 % Folder setting
-Folder_path = 'E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\rawdata\5. ±â¼÷»ç\±â¼÷»ç\ÃâÀÔ±â·Ï(new)\Dµ¿ ºÎÃâÀÔ±¸';
+Folder_path = 'E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\rawdata\5. ê¸°ìˆ™ì‚¬\ê¸°ìˆ™ì‚¬\ì¶œì…ê¸°ë¡(new)\Dë™ ë¶€ì¶œì…êµ¬';
 cd(Folder_path)
 Folder_ls = ls;
 Folder_ls(1:2,:) = [];
@@ -195,18 +195,18 @@ for i = 1:size(Folder_ls,1)
             % Unstructred data 1
                 raw(1:5,:) = [];
 
-                ind_1 = find(strcmp(raw(1,:),'ÀÏÀÚ'));
-                ind_2 = find(strcmp(raw(1,:),'½Ã°£'));
-                ind_3 = find(strcmp(raw(1,:),'°Ç¹°'));
-                ind_4 = find(strcmp(raw(1,:),'ÃâÀÔ¹®'));
-                ind_5 = find(strcmp(raw(1,:),'»ç¿ø¸í'));
-                ind_6 = find(strcmp(raw(1,:),'Ä«µå¹øÈ£'));
+                ind_1 = find(strcmp(raw(1,:),'ì¼ì'));
+                ind_2 = find(strcmp(raw(1,:),'ì‹œê°„'));
+                ind_3 = find(strcmp(raw(1,:),'ê±´ë¬¼'));
+                ind_4 = find(strcmp(raw(1,:),'ì¶œì…ë¬¸'));
+                ind_5 = find(strcmp(raw(1,:),'ì‚¬ì›ëª…'));
+                ind_6 = find(strcmp(raw(1,:),'ì¹´ë“œë²ˆí˜¸'));
 
                 raw = cat(2,raw(:,ind_1),raw(:,ind_2),raw(:,ind_3),raw(:,ind_4),raw(:,ind_5),raw(:,ind_6));
 
                 raw(1,:) = [];
                               
-                % Find rows: '»ç¿ø¸í' = NaN
+                % Find rows: 'ì‚¬ì›ëª…' = NaN
                 nanrow = [];
                 for k = 1:size(raw,1)
                     if isnan(raw{k,5}) == 1
@@ -223,7 +223,7 @@ for i = 1:size(Folder_ls,1)
                     end
                 end
                 
-                % Find rows: '»ç¿ø¸í' = NaN
+                % Find rows: 'ì‚¬ì›ëª…' = NaN
                 nanrow2 = [];
                 for m = 1:size(raw,1)
                     if isnan(raw{m,1}) == 1
@@ -252,14 +252,14 @@ Result_D_sub = cell2table(Result);
 
 clear Result
 
-% save_path = 'E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\rawdata\5. ±â¼÷»ç\±â¼÷»ç';
+% save_path = 'E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\rawdata\5. ê¸°ìˆ™ì‚¬\ê¸°ìˆ™ì‚¬';
 % cd(save_path)
 % csvwrite('dorm_B.csv', Result_B);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% For unstructured data + structured dta
 % Folder setting
-Folder_path = 'E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\rawdata\5. ±â¼÷»ç\±â¼÷»ç\ÃâÀÔ±â·Ï(new)\Eµ¿';
+Folder_path = 'E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\rawdata\5. ê¸°ìˆ™ì‚¬\ê¸°ìˆ™ì‚¬\ì¶œì…ê¸°ë¡(new)\Eë™';
 cd(Folder_path)
 Folder_ls = ls;
 Folder_ls(1:2,:) = [];
@@ -281,18 +281,18 @@ for i = 1:size(Folder_ls,1)
             % Unstructred data 1
                 raw(1:5,:) = [];
 
-                ind_1 = find(strcmp(raw(1,:),'ÀÏÀÚ'));
-                ind_2 = find(strcmp(raw(1,:),'½Ã°£'));
-                ind_3 = find(strcmp(raw(1,:),'°Ç¹°'));
-                ind_4 = find(strcmp(raw(1,:),'ÃâÀÔ¹®'));
-                ind_5 = find(strcmp(raw(1,:),'»ç¿ø¸í'));
-                ind_6 = find(strcmp(raw(1,:),'Ä«µå¹øÈ£'));
+                ind_1 = find(strcmp(raw(1,:),'ì¼ì'));
+                ind_2 = find(strcmp(raw(1,:),'ì‹œê°„'));
+                ind_3 = find(strcmp(raw(1,:),'ê±´ë¬¼'));
+                ind_4 = find(strcmp(raw(1,:),'ì¶œì…ë¬¸'));
+                ind_5 = find(strcmp(raw(1,:),'ì‚¬ì›ëª…'));
+                ind_6 = find(strcmp(raw(1,:),'ì¹´ë“œë²ˆí˜¸'));
 
                 raw = cat(2,raw(:,ind_1),raw(:,ind_2),raw(:,ind_3),raw(:,ind_4),raw(:,ind_5),raw(:,ind_6));
 
                 raw(1,:) = [];
                               
-                % Find rows: '»ç¿ø¸í' = NaN
+                % Find rows: 'ì‚¬ì›ëª…' = NaN
                 nanrow = [];
                 for k = 1:size(raw,1)
                     if isnan(raw{k,5}) == 1
@@ -309,7 +309,7 @@ for i = 1:size(Folder_ls,1)
                     end
                 end
                 
-                % Find rows: '»ç¿ø¸í' = NaN
+                % Find rows: 'ì‚¬ì›ëª…' = NaN
                 nanrow2 = [];
                 for m = 1:size(raw,1)
                     if isnan(raw{m,1}) == 1
@@ -338,14 +338,14 @@ Result_E = cell2table(Result);
 
 clear Result
 
-% save_path = 'E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\rawdata\5. ±â¼÷»ç\±â¼÷»ç';
+% save_path = 'E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\rawdata\5. ê¸°ìˆ™ì‚¬\ê¸°ìˆ™ì‚¬';
 % cd(save_path)
 % csvwrite('dorm_B.csv', Result_B);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% For unstructured data + structured dta
 % Folder setting
-Folder_path = 'E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\rawdata\5. ±â¼÷»ç\±â¼÷»ç\ÃâÀÔ±â·Ï(new)\Fµ¿';
+Folder_path = 'E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\rawdata\5. ê¸°ìˆ™ì‚¬\ê¸°ìˆ™ì‚¬\ì¶œì…ê¸°ë¡(new)\Fë™';
 cd(Folder_path)
 Folder_ls = ls;
 Folder_ls(1:2,:) = [];
@@ -367,18 +367,18 @@ for i = 1:size(Folder_ls,1)
             % Unstructred data 1
                 raw(1:5,:) = [];
 
-                ind_1 = find(strcmp(raw(1,:),'ÀÏÀÚ'));
-                ind_2 = find(strcmp(raw(1,:),'½Ã°£'));
-                ind_3 = find(strcmp(raw(1,:),'°Ç¹°'));
-                ind_4 = find(strcmp(raw(1,:),'ÃâÀÔ¹®'));
-                ind_5 = find(strcmp(raw(1,:),'»ç¿ø¸í'));
-                ind_6 = find(strcmp(raw(1,:),'Ä«µå¹øÈ£'));
+                ind_1 = find(strcmp(raw(1,:),'ì¼ì'));
+                ind_2 = find(strcmp(raw(1,:),'ì‹œê°„'));
+                ind_3 = find(strcmp(raw(1,:),'ê±´ë¬¼'));
+                ind_4 = find(strcmp(raw(1,:),'ì¶œì…ë¬¸'));
+                ind_5 = find(strcmp(raw(1,:),'ì‚¬ì›ëª…'));
+                ind_6 = find(strcmp(raw(1,:),'ì¹´ë“œë²ˆí˜¸'));
 
                 raw = cat(2,raw(:,ind_1),raw(:,ind_2),raw(:,ind_3),raw(:,ind_4),raw(:,ind_5),raw(:,ind_6));
 
                 raw(1,:) = [];
                               
-                % Find rows: '»ç¿ø¸í' = NaN
+                % Find rows: 'ì‚¬ì›ëª…' = NaN
                 nanrow = [];
                 for k = 1:size(raw,1)
                     if isnan(raw{k,5}) == 1
@@ -395,7 +395,7 @@ for i = 1:size(Folder_ls,1)
                     end
                 end
                 
-                % Find rows: '»ç¿ø¸í' = NaN
+                % Find rows: 'ì‚¬ì›ëª…' = NaN
                 nanrow2 = [];
                 for m = 1:size(raw,1)
                     if isnan(raw{m,1}) == 1
@@ -424,14 +424,14 @@ Result_F = cell2table(Result);
 
 clear Result
 
-% save_path = 'E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\rawdata\5. ±â¼÷»ç\±â¼÷»ç';
+% save_path = 'E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\rawdata\5. ê¸°ìˆ™ì‚¬\ê¸°ìˆ™ì‚¬';
 % cd(save_path)
 % csvwrite('dorm_B.csv', Result_B);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% For unstructured data + structured dta
 % Folder setting
-Folder_path = 'E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\rawdata\5. ±â¼÷»ç\±â¼÷»ç\ÃâÀÔ±â·Ï(new)\Gµ¿';
+Folder_path = 'E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\rawdata\5. ê¸°ìˆ™ì‚¬\ê¸°ìˆ™ì‚¬\ì¶œì…ê¸°ë¡(new)\Gë™';
 cd(Folder_path)
 Folder_ls = ls;
 Folder_ls(1:2,:) = [];
@@ -453,18 +453,18 @@ for i = 1:size(Folder_ls,1)
             % Unstructred data 1
                 raw(1:5,:) = [];
 
-                ind_1 = find(strcmp(raw(1,:),'ÀÏÀÚ'));
-                ind_2 = find(strcmp(raw(1,:),'½Ã°£'));
-                ind_3 = find(strcmp(raw(1,:),'°Ç¹°'));
-                ind_4 = find(strcmp(raw(1,:),'ÃâÀÔ¹®'));
-                ind_5 = find(strcmp(raw(1,:),'»ç¿ø¸í'));
-                ind_6 = find(strcmp(raw(1,:),'Ä«µå¹øÈ£'));
+                ind_1 = find(strcmp(raw(1,:),'ì¼ì'));
+                ind_2 = find(strcmp(raw(1,:),'ì‹œê°„'));
+                ind_3 = find(strcmp(raw(1,:),'ê±´ë¬¼'));
+                ind_4 = find(strcmp(raw(1,:),'ì¶œì…ë¬¸'));
+                ind_5 = find(strcmp(raw(1,:),'ì‚¬ì›ëª…'));
+                ind_6 = find(strcmp(raw(1,:),'ì¹´ë“œë²ˆí˜¸'));
 
                 raw = cat(2,raw(:,ind_1),raw(:,ind_2),raw(:,ind_3),raw(:,ind_4),raw(:,ind_5),raw(:,ind_6));
 
                 raw(1,:) = [];
                               
-                % Find rows: '»ç¿ø¸í' = NaN
+                % Find rows: 'ì‚¬ì›ëª…' = NaN
                 nanrow = [];
                 for k = 1:size(raw,1)
                     if isnan(raw{k,5}) == 1
@@ -481,7 +481,7 @@ for i = 1:size(Folder_ls,1)
                     end
                 end
                 
-                % Find rows: '»ç¿ø¸í' = NaN
+                % Find rows: 'ì‚¬ì›ëª…' = NaN
                 nanrow2 = [];
                 for m = 1:size(raw,1)
                     if isnan(raw{m,1}) == 1
@@ -514,7 +514,7 @@ clear Result
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % csvwrite
-save_path = 'E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\rawdata\5. ±â¼÷»ç\±â¼÷»ç';
+save_path = 'E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\rawdata\5. ê¸°ìˆ™ì‚¬\ê¸°ìˆ™ì‚¬';
 cd(save_path)
 writetable(Result_A, 'dorm_A.csv');
 writetable(Result_B, 'dorm_B.csv');
