@@ -6,28 +6,28 @@
 clc; close all; clear all;
 
 % Folder setting
-Folder_path = 'E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\rawdata\6. ÈÖÆ®´Ï½º_ÃâÀÔ±â·Ï(180524 ¼ö·É)\2017³â ÀÔÀå³»¿ª\2017³â ÀÔÀå³»¿ª';
+Folder_path = 'E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\rawdata\6. íœ˜íŠ¸ë‹ˆìŠ¤_ì¶œì…ê¸°ë¡(180524 ìˆ˜ë ¹)\2017ë…„ ì…ì¥ë‚´ì—­\2017ë…„ ì…ì¥ë‚´ì—­';
 cd(Folder_path)
 
 % .xlsx reading
-data = xlsread('2017_1¿ù.xlsx');
+data = xlsread('2017_1ì›”.xlsx');
 % LUT = xlsread('LUT.xlsx');
 
-% Cleaning(±³Á÷¿ø Áö¿ì±â)
+% Cleaning(êµì§ì› ì§€ìš°ê¸°)
 data(:,[2,3]) = [];
 del = find(isnan(data(:,1)));
 data(del,:) = [];
 
 % Excel vlookup
 % Origin_Stu_id = data(:,1);
-% Stu_id = vlookup(Origin_Stu_id, LUT, 2); % ÇĞ¹øÀ» º¯È¯ÇÔ
+% Stu_id = vlookup(Origin_Stu_id, LUT, 2); % í•™ë²ˆì„ ë³€í™˜í•¨
 
 Stu_id(Stu_id == 0) = NaN;
-data(:,1) = Stu_id; % º¯È¯ ¾ÈµÈ °ÍÀ» NaNÀ¸·Î ¹Ù²Ù°í 1¿­¿¡ Ãß°¡
+data(:,1) = Stu_id; % ë³€í™˜ ì•ˆëœ ê²ƒì„ NaNìœ¼ë¡œ ë°”ê¾¸ê³  1ì—´ì— ì¶”ê°€
 
 del2 = find(isnan(data(:,1)));
 data(del2,:) = [];
-data(~isfinite(data))=0; % º¯È¯ ¾ÈµÈ Çà ÀüÃ¼¸¦ Á¦°ÅÇÏ°í 0À¸·Î ¹Ù²ãÁÜ
+data(~isfinite(data))=0; % ë³€í™˜ ì•ˆëœ í–‰ ì „ì²´ë¥¼ ì œê±°í•˜ê³  0ìœ¼ë¡œ ë°”ê¿”ì¤Œ
 
 % Integrated data generation
 k=0;
