@@ -6,7 +6,7 @@
 
 clear all; close all; clc
 
-cd('E:\ÇĞ»ıµ¥ÀÌÅÍ ºĞ¼®\2017\DTW_SEM(180418)\result_dtw\201905_all')
+cd('E:\í•™ìƒë°ì´í„° ë¶„ì„\2017\DTW_SEM(180418)\result_dtw\201905_all')
 
 % File reading and preprocessing for HC
 s = fileread('distmat161_all.csv');
@@ -219,7 +219,7 @@ dlmwrite("clustering_result172_all(c=3_8).csv", result, 'delimiter', ',', 'preci
 % c_2 = cluster(z, 'maxclust', 2);
 
 
-% I = inconsistent(z) % ºÒÀÏÄ¡°è¼ö(clustering constraintÀÇ ¶Ç ´Ù¸¥ Á¾·ù)
+% I = inconsistent(z) % ë¶ˆì¼ì¹˜ê³„ìˆ˜(clustering constraintì˜ ë˜ ë‹¤ë¥¸ ì¢…ë¥˜)
 % c = cluster(z, 'cutoff', 0.8);
 
 
